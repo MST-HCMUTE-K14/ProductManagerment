@@ -1,0 +1,21 @@
+{
+  "name": "pm",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "PhongLe",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.1",
+    "bootstrap-slider": "^9.9.0",
+    "ejs": "^2.5.7",
+    "express": "^4.15.4",
+    "express-session": "^1.15.5",
+    "mongoose": "^4.11.12",
+    "qrcode": "^0.9.0",
+    "underscore": "^1.8.3"
+  }
+}

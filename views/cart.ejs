@@ -1,0 +1,40 @@
+<html lang="en">
+
+<head>
+    <title>Shopping Cart</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/85b6cc54da.js"></script>
+    
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse">
+        <div class="container">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">Your Cart</a>
+                </div>
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="/addprod"><span class="glyphicon glyphicon-plus"></span> Add Product</a></li>
+                    <li><a href="/list"><i class="fa fa-list-alt" aria-hidden="true"></i> List Product</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <ul class="list-group">
+            <% listProd.forEach(function (item) { %>
+                <li class="list-group-item"> Name:
+                    <%= item.name %> <span class="badge btn"><a href="/delete/<%= item.id %>" style="color:#FFFFFF" >delete</a></span></li>
+                <% }) %>
+        </ul>
+    </div>
+
+</body>
+
+</html>
